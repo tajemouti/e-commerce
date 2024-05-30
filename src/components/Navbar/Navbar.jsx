@@ -8,7 +8,11 @@ const Navbar = () => {
     <div className='navbar'>
         <div className="nav-logo">
             <img src={logo} alt="logo" />
+            <p>Shopper</p>
         </div>
+        <ul className="nav-menu">
+            
+        </ul>
     </div>
   )
 }
