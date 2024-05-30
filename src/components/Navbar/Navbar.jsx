@@ -16,6 +16,9 @@ const Navbar = () => {
             <li>Women</li>
             <li>Kids</li>
         </ul>
+        <div className="nav-loin-cart">
+            
+        </div>
     </div>
   )
 }
