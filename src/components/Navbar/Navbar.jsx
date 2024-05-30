@@ -11,7 +11,10 @@ const Navbar = () => {
             <p>Shopper</p>
         </div>
         <ul className="nav-menu">
-            
+            <li>Shop</li>
+            <li>Mden</li>
+            <li>Women</li>
+            <li>Kids</li>
         </ul>
     </div>
   )
