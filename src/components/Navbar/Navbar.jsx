@@ -11,14 +11,17 @@ const Navbar = () => {
             <p>Shopper</p>
         </div>
         <ul className="nav-menu">
-            <li>Shop</li>
-            <li>Mden</li>
+            <li>Shop 
+              <hr />
+            </li>
+            <li>Men</li>
             <li>Women</li>
             <li>Kids</li>
         </ul>
-        <div className="nav-loin-cart">
+        <div className="nav-login-cart">
             <button>Login</button>
             <img src={cart} alt="cart icon" />
+
         </div>
     </div>
   )
