@@ -13,6 +13,7 @@ function App() {
           <Route path="/" element={<Shop />} />
           <Route path="/men" element={<ShopCategory />} />
           <Route path="/women" element={<ShopCategory />} />
+          <Route path="/kids" element={<ShopCategory />} />
         </Routes>
       </BrowserRouter>
     </div>
