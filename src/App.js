@@ -12,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Shop />} />
           <Route path="/men" element={<ShopCategory />} />
+          <Route path="/women" element={<ShopCategory />} />
         </Routes>
       </BrowserRouter>
     </div>
