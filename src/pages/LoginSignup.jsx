@@ -3,7 +3,7 @@ import './css/login_signup.css'
 
 const LoginSignup = () => {
   return (
-    <div classname="loginsignup">
+    <div className="loginsignup">
       <div className="loginsignup-container">
         <h1>Sign Up</h1>
         <div className="loginsignup-fields">
