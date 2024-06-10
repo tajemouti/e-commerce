@@ -1,8 +1,11 @@
 import React from 'react'
+import './description_box.css'
 
 const DescriptionBox = () => {
   return (
-    <div>DescriptionBox</div>
+    <div className='description_box'>
+        DescriptionBox
+    </div>
   )
 }
 
