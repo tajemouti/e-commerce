@@ -1,4 +1,5 @@
 import React from 'react'
+import './related_products.css'
 
 const RelatedProducts = () => {
   return (
