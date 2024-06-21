@@ -1,4 +1,5 @@
 import React from 'react'
+import './cart_items.css'
 
 const CartItems = () => {
   return (
