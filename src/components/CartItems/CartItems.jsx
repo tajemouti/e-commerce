@@ -21,13 +21,13 @@ const CartItems = () => {
         if (cartItems[e.id] > 0)
         {
           return <div>
-          <div className="cart-items-format">
+          <div className="cart-items-format cart-items-format-main">
             <img src={e.image} alt="product" className='cart-icon-product-icon'/>
             <p>{e.name}</p>
             <p>${e.new_price}</p>
             <button className='cart-items-quantity'>{cartItems[e.id]}</button>
             <p>${e.new_price*cartItems[e.id]}</p>
-            <img src={remove_icon} onClick={() => {removeFromCart(e.id)}} alt="remove-icon" />
+            <img src={remove_icon} className='cart-items-remove-icon' onClick={() => {removeFromCart(e.id)}} alt="remove-icon" />
           </div>
           <hr />
         </div>
