@@ -1,24 +1,47 @@
-import React from 'react'
-import './item.css'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import PropTypes from 'prop-types';
+import './item.css';
+import { Link } from 'react-router-dom';
 
-const Item = (props) => {
+const Item = ({
+  id, image, name, newPrice, oldPrice,
+}) => {
+  const handleScrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
-    <div className='item'>
-        <Link to={`/product/${props.id}`}>
-          <img onClick={window.scrollTo(0, 0)} src={props.image} alt="item" />
-        </Link>
-        <p>{props.name}</p>
-        <div className="item-prices">
-            <div className="item-price-new">
-                ${props.new_price}
-            </div>
-            <div className="item-price-old">
-                ${props.old_price}
-            </div>
-        </div>
-    </div>
-  )
-}
+    <div className="item">
+      <Link to={`/product/${id}`}>
+        <button
+          type="button"
+          onClick={handleScrollToTop}
+        >
+          <img src={image} alt="item" />
+        </button>
+      </Link>
 
-export default Item
+      <p>{name}</p>
+      <div className="item-prices">
+        <div className="item-price-new">
+          $
+          {newPrice}
+        </div>
+        <div className="item-price-old">
+          $
+          {oldPrice}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+Item.propTypes = {
+  id: PropTypes.number.isRequired,
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  newPrice: PropTypes.number.isRequired,
+  oldPrice: PropTypes.number.isRequired,
+};
+
+export default Item;
