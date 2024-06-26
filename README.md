@@ -37,7 +37,7 @@ VSCode, WSL, npm, node
 <details>
   <summary>Reactjs</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://react.dev/">React.js</a></li>
   </ul>
 </details>
 
@@ -53,7 +53,7 @@ VSCode, WSL, npm, node
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://google.com)
+- Live Demo [Link](https://shoppercity.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
